@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Use of Inline CSS</title>
+        <style type="text/css">
+            .red{
+                color: red;
+            }
+            .large{
+                font-size: 200%;
+            }
+            .underline{
+                text-decoration: underline;
+            }
+            #green{
+                color: green;
+            }
+            .first_section{
+                background-color: pink;
+                color: blue;
+                width: 200px;
+                position: relative;
+                left: 0px;
+                top: 200px;
+            }
+            .second_section
+            {
+                background-color: rgb(228, 222, 222);
+                width: 200px;
+                position: relative;
+                z-index: 1;
+                opacity: 0.8;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="first_section">
+            <h1>CSS is cool!</h1>
+            <p class="large">This is large text</p>
+        </div>
+        <div class="second_section">
+            <p class="red">This is red text</p>
+            <p id="green">This is green text  &nbsp;<span class="underline">This is an underlined text</span></p>
+            <p class="red large">This is red large text</p>
+        </div>
+    </body>
+</html>
